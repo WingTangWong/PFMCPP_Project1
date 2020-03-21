@@ -11,8 +11,8 @@ Purpose:  This project will get you thinking correctly about choosing good names
  1) write out 10 nouns in the space provided below.
     Choose nouns that do things.  
     avoid choosing nouns that have things done TO them.
-    e
- 
+
+
  2) for each of the 10 nouns, write out 3 actions it might perform, in plain english.
     a) AVOID state-checking actions, like "Car has a horn".  i.e.
         car.hasHorn()
@@ -30,10 +30,9 @@ Purpose:  This project will get you thinking correctly about choosing good names
             other actions that would work:
                 action: consume electricity
                 action: burn out and destroy filament.
-
         
  3) write out how you'd call that action in pseudo code, in the space after the plain-english action
- 
+
  4) If the action requires multiple words, use camelCaseToNameIt
      don't forget the semi-colon after each statement
  
@@ -57,87 +56,99 @@ arm.flex();                             // 3)
 arm.rotateCounterClockwise();           // 4) demonstrates CamelCase
 
 
-//  1)
-//  Noun:
-//  action 1:
+// ================================================================================
+// WingTangwong's entries  
+// ================================================================================
+//
+// noun: fire
+// action 1: provides light
+fire.lightLocation(); // provides fire based light in location
+// action 2: provides heat
+fire.heatItem(); // provides heat to item
+// action 3: ignite item
+fire.igniteItem();
+// action 4: consumes combustable items
+fire.consumeItem();
 
-//  action 2:
+// noun: water
+// action 1: fills containers
+water.fillContainer();
+// action 2: wets surfaces 
+water.wetItem(); // surface effect on item
+// action 3: puts out fires
+water.extinguishItem(); // checks if item has fire
+// action 4: soaks porous items
+water.soakItem(); // internal effect on item
 
-//  action 3:
- 
-//  2)
-//  Noun:
-//  action 1:
+// noun: air
+// action 1: fills containers
+air.fillContainer();
+// action 2: fans burning items
+air.fanItem(); // checks item for burning state
+// action 3: conducts heat
+air.conductHeat();
+// action 4: conducts vibrations
+air.conductVibrations();
 
-//  action 2:
+// noun: earth
+// action 1: smother fires
+earth.smotherItem(); // "burning" can be a state of an item
+// action 2: absorbs water, due to porous nature
+earth.absorbItem(); // absorb an item if it has water attribute
+// action 3: fills containers
+earth.fillContainer();
 
-//  action 3:
- 
-//  3)
-//  Noun:
-//  action 1:
+// noun: hand
+// action 1: grasps a physical object
+hand.graspItem();
+// action 2: pushes a button/lever/item
+hand.pushItem();
+// action 3: pulls a button/level/item
+hand.pullItem();
+// action 4: carries a physcal object 
+hand.carryItem();
 
-//  action 2:
+// noun: mouth
+// action 1: vocalizes sounds
+mouth.createSound();
+// action 2: inhales air
+mouth.inhaleItem(); // generalizes "air" as an item
+// action 3: drinks in water
+mouth.drinkItem();
+// action 4: blows air on fire
+mouth.exhaleItem(); 
 
-//  action 3:
- 
-//  4)
-//  Noun:
-//  action 1:
+// noun: foot
+// action 1: stomps on earth
+foot.stompItem(); // apply stomp action from foot to item
+// action 2: kicks an object
+foot.kickItem();
+// action 3: pedal, if on a bike or machine
+foot.pumpPedal();
 
-//  action 2:
+// noun: rope
+// action 1: engtangle an object
+rope.entangleItem();
+// action 2: pulls on object
+rope.pullItem();
+// action 3: connect two items
+rope.connectItems();
 
-//  action 3:
- 
-//  5)
-//  Noun:
-//  action 1:
+// noun: hammer
+// action 1: strike object
+hammer.strikeItem();
+// action 2: shape raw materials 
+hammer.shapeItem();
+// action 3: drive nail into wood
+hammer.driveItemIntoItem();
 
-//  action 2:
-
-//  action 3:
- 
-//  6)
-//  Noun:
-//  action 1:
-
-//  action 2:
-
-//  action 3:
- 
-//  7)
-//  Noun:
-//  action 1:
-
-//  action 2:
-
-//  action 3:
- 
-//  8)
-//  Noun:
-//  action 1:
-
-//  action 2:
-
-//  action 3:
- 
-//  9)
-//  Noun:
-//  action 1:
-
-//  action 2:
-
-//  action 3:
- 
-//  10)
-//  Noun:
-//  action 1:
-
-//  action 2:
-
-//  action 3:
- 
-
+// noun: spoon
+// action 1: hold a small amount of something
+spoon.fillWithItem();
+// action 2: stir/mix something
+spoon.mixItemsInContainer(); 
+// action 3: scrape a semi-hard to soft material
+spoon.scrapeItem();
 
 #endif
 
